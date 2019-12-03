@@ -1,0 +1,850 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#link {
+    font-size: 1.3em !important;
+    line-height: 4.0 !important;
+    color: white;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#link:hover {
+    color: rgb(255, 123, 0);
+}
+
+.navbar {
+    background: #4dbd74 !important;
+}
+
+.active {
+    background-color: rgb(255, 123, 0);
+}
+
+body {
+    background-color: rgb(255, 255, 196) !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#mob_icon {
+    color: white;
+}
+
+.menu {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #4dbd74!important;
+    border-radius: 10px;
+    //box-shadow: 0px 5px 5px grey;
+}
+
+.menu2 {
+    text-align: center;
+}
+
+.wrapper {
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    height: auto;
+}
+
+a {
+    color: black;
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.productImage {
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 150px;
+}
+
+.itemImage {
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 150px;
+}
+
+.itemImage {
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 150px;
+}
+
+.content {
+    border-radius: 10px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5%;
+    text-align: center;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#userlist {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#userlist2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: Center;
+    border-radius: 10px;
+}
+
+.delivery {
+    font-family: 'Work Sans', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 20%;
+}
+
+#basketupdate {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#checkout {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#checkout span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#checkout span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#checkout:hover span {
+    padding-right: 25px;
+}
+
+#checkout:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#backbtn {
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#backbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#backbtn span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+#backbtn:hover span {
+    padding-left: 20px;
+}
+
+#backbtn:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+span {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+#userlist td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.item:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.item:nth-child(odd) {
+    background-color: white;
+}
+
+.item {
+    width: 100%;
+}
+
+#userlist tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#userlist tr:hover {
+    background-color: #ddd;
+}
+
+#userlist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #28A745;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#userlist2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#userlist2 tr:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+#userlist2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #28A745;
+    color: white;
+}
+
+.leftItem {
+    float: left;
+    width: 20%;
+    height: 200px;
+    margin-top: 0%;
+}
+
+.rightItem {
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin-top: 0%;
+}
+
+.middleItem {
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin-top: 0%;
+}
+
+.leftdiv {
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin-top: 10%;
+}
+
+.rightdiv {
+    float: left;
+    width: 65%;
+    height: 200px;
+    margin-top: 10%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.middlediv {
+    float: left;
+    width: 5%;
+    height: 300px;
+    margin-top: 10%;
+}
+
+.leftdiv2 {
+    float: left;
+    width: 30%;
+    height: 300px;
+}
+
+.rightdiv2 {
+    float: left;
+    width: 65%;
+    height: 300px;
+}
+
+.middlediv2 {
+    float: left;
+    width: 5%;
+    height: 300px;
+}
+
+.modalleftdiv {
+    float: left;
+    width: 35%;
+    height: 150px;
+    text-align: right;
+}
+
+.modalmiddlediv {
+    float: left;
+    width: 5%;
+    height: 150px;
+}
+
+.modalrightdiv {
+    float: left;
+    width: 60%;
+    height: 150px;
+}
+
+.modalleftdiv2 {
+    float: left;
+    width: 40%;
+    height: 200px;
+    text-align: right;
+    padding-top: 8px;
+}
+
+.modalmiddlediv2 {
+    float: left;
+    width: 5%;
+    height: 200px;
+}
+
+.modalrightdiv2 {
+    float: left;
+    width: 55%;
+    height: 200px;
+}
+
+.modalProductImage {
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.productInfoImage {
+    height: 300px;
+    width: 300px;
+}
+
+#stocks,
+#totalprice,
+#date,
+#bday,
+#email {
+    float: right;
+    width: 100%
+}
+
+.modal-header {
+    background-color: #4dbd74;
+    color: white;
+}
+
+p {
+    text-align: bottom;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// #cardi {
+//     margin-top: 2.5% !important;
+// }
+.cardprofile {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#header {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: #4dbd74;
+}
+
+.homecard {
+    margin-top: 5%;
+}
+
+#menulink {
+    color: white;
+    font-size: 20px;
+}
+
+.slideshow {
+    width: 60%;
+    height: 45%;
+    margin-top: 5px;
+}
+
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 5.1s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade2 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: -15px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profiletop {
+    float: left;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.cbutton:hover .overlay {
+    height: 7%;
+}
+
+.cbuttons {
+    background-color: #4dbd74;
+    color: white;
+    margin-top: 50%;
+}
+
+.cbuttons:hover {
+    color: white;
+}
+
+.cbutton {
+    border-radius: 50%;
+}
+
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     background-color: #28a745;
+//     overflow: hidden;
+//     width: 10%;
+//     height: 0;
+//     transition: .5s ease;
+//     margin-left: 0px;
+//     margin-top: 0%;
+//     margin-bottom: 17%;
+//     border-bottom-left-radius: 500px;
+//     border-bottom-right-radius: 500px;
+// }
+.userinfo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 2%;
+    font-size: 20px;
+    text-align: right;
+    width: 20%;
+    float: left;
+}
+
+.userinfo2 {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 55%;
+    font-size: 20px;
+}
+
+.vl {
+    float: left;
+    border-left: 2px solid #4dbd74;
+    height: 300px;
+    margin-top: 20px;
+}
+
+#backButton {
+    margin-top: 15%;
+    font-size: 60px;
+    color: #4dbd74;
+}
+
+hr {
+    flex: 1;
+    border: none;
+    height: 2px;
+    margin-bottom: 10px;
+    background: rgb(165, 165, 165);
+}
+
+#productInfoButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+#text_notif {
+    text-decoration: none !important;
+    color: black;
+}
+
+.dropdown-menu li:hover {
+    background-color: rgba(94, 94, 94, 0.315);
+}
+
+#btns {
+    padding: 5px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: #4dbd74;
+    border: 3px solid #4dbd74;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+#btns3 {
+    padding: 5px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: #4dbd74;
+    border: 3px solid #4dbd74;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#btns:active {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+#prof_pic_nav {
+    height: 30px;
+    width: 30px !important;
+    border: 0px !important;
+    border-radius: 50% !important;
+}
+
+
+/*
+ *  STYLE 2
+ */
+
+#style-2::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(71, 71, 71, 0.726);
+}
+
+#monthbtn {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    padding: 0% !important;
+    height: 70px !important;
+}
+
+#tdprod {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 40%;
+}
+
+#managetd {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.scrolimg {
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #3aba64;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.scroll {
+    width: 100px;
+    height: 80px;
+    transition: 0.2s;
+    z-index: 99;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#carouselimg {
+    height: 400px;
+    width: 60%;
+}
+
+#inner {
+    text-align: center;
+    color: 4dbd74;
+}
+
+i {
+    color: white;
+}
+
+#notif {
+    padding: 10px;
+}
+
+#basketimg {
+    height: 150px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+#baskettd {
+    text-align: left;
+    vertical-align: center;
+    margin-right: 20px;
+}
+
+#basketitem {
+    font-family: 'Work Sans', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#basketitem tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#basketitem tr:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+#basketitem th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #28A745;
+    color: white;
+    #inputs {
+        float: left;
+        width: 100%;
+        height: 100px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    #inputsright {
+        float: right;
+        width: 100%;
+        height: 90px;
+        margin-top: 50px;
+    }
+}
+
+.col-form-label {
+    font-weight: normal !important;
+    #inputsright {
+        float: right;
+        width: 100%;
+        height: 90px;
+        margin-top: 50px;
+    }
+}
+
+#usermodalphoto {
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    background-color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#userleftdiv {
+    width: 50%;
+    height: 300px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#usermodal {
+    height: 700px;
+}
+
+#tablebody {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#tableBody {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#tablesupply {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#acknowledgeBtn {
+    text-align: center;
+}
+
+//graph
+#inputsright2 {
+    float: right;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+}
+
+#notiftable {
+    margin: 0px;
+}
+
+#proddescription {
+    height: 100px;
+    width: 350px;
+    overflow-y: scroll;
+}
+
+#app {
+    width: 100% !important;
+}
