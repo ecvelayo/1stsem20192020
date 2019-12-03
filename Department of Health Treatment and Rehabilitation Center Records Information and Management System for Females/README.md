@@ -1,14 +1,14 @@
 System Requirements
 
 Source Code Editor: Sublime Text
-PHP: v. 7.3.3
 Xampp: v. 7.3.2
 Laravel Framework: v. 5.8.35
 Composer: v. 1.8.4
 Node J.S: v. 10.15.3
 Git: Version 2.21.0
-
 Operating System: Windows 10/ Windows 7
+PHP: v. 7.3.3
+
 
 1. Download Sumblime Text3 (https://www.sublimetext.com/3).
 2. Download Xampp 7.3.2 (https://www.apachefriends.org/download.html)
