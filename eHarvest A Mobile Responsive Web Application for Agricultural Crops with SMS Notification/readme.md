@@ -33,16 +33,23 @@ Step 6. After migrating successfully  type “php artisan serve”.<br>
 Step 7. Open new terminal and type "npm run watch".<br>
 Step 8. Open Google Chrome Browser and type: http://localhost:8000/<br>
 <br>
+
 Default user:<br>
 email: admin@gmail.com<br>
 password: admin12345<br>
 
 
+
 Troubleshoot: <br>
+All users:
+Session Expire: Refresh the browser and relogin to your account.
+Notification bell: If the notification doesn`t update please refresh the page.
 
 Admin user: 
 Manage Order Page: When accepting/declining an order doesn`t show alert messege, Please load the nexmo account for SMS notification 
 because it will not save to transaction table on the database if the SMS notification will not work.
+
+
 
 
 
