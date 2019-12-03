@@ -2,20 +2,20 @@
 *System Requirements* <br>
 <br>
 	Hardware Requirements<br>
-		Processor<tr>				Intel Core i5 or higher<br>
-		Memory	<tr>			    4GB RAM or higher<br>
-		SSD/HDD				    Free Disk Space 1GB<br>
-		Processor Type			64 bit<br>
-		Processor Speed			2.0 ghz or higher<br>
+		Processor:				Intel Core i5 or higher<br>
+		Memory:			    4GB RAM or higher<br>
+		SSD/HDD:					    Free Disk Space 1GB<br>
+		Processor Type:				64 bit<br>
+		Processor Speed:				2.0 ghz or higher<br>
 
 	 
    Software Requirements<br>
-		Source Code Editor			Visual Studio Code <br>
-		PHP 					    Version 7.3.3<br>
-		Laravel Framework 			Version  5.8.35<br>
-		Composer				    Version  1.8.4 <br>
-		Git					        Version  2.21.0<br>
-		Operating System 			Windows 10<br>
+		Source Code Editor:				Visual Studio Code <br>
+		PHP:	 					    Version 7.3.3<br>
+		Laravel Framework:	 			Version  5.8.35<br>
+		Composer:					    Version  1.8.4 <br>
+		Git:						        Version  2.21.0<br>
+		Operating System:	 			Windows 10<br>
 
 
 *Installation*<br>
