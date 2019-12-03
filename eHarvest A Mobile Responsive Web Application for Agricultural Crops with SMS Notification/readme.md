@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------
-##*System Requirements* <br>
+*System Requirements* <br>
 User:<br>
 	Hardware Requirements<br>
 		Processor				Intel Core i5 or higher<br>
@@ -18,7 +18,7 @@ User:<br>
 		Operating System 			Windows 10<br>
 
 
-##*Installation*<br>
+*Installation*<br>
 
 Step 1.Download and install the latest version of XAMPP on the website 
 (https://www.apachefriends.org/download.html).<br>
