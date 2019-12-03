@@ -2,8 +2,8 @@
 *System Requirements* <br>
 <br>
 	Hardware Requirements<br>
-		Processor				Intel Core i5 or higher<br>
-		Memory				    4GB RAM or higher<br>
+		Processor<tr>				Intel Core i5 or higher<br>
+		Memory	<tr>			    4GB RAM or higher<br>
 		SSD/HDD				    Free Disk Space 1GB<br>
 		Processor Type			64 bit<br>
 		Processor Speed			2.0 ghz or higher<br>
