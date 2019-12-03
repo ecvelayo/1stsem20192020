@@ -1,0 +1,552 @@
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #productImage {
+        border-radius: 10px 10px 0px 0px;
+        width: 50% !important;
+        margin-left: 3%;
+    }
+    .text {
+        font-size: 11px;
+    }
+    .navTop {
+        width: 320px !important;
+    }
+    .navBottom {
+        width: 320px !important;
+    }
+    #logincard {
+        width: 330px !important;
+    }
+    #homecontainer {
+        width: 320px !important;
+        margin: 0px;
+    }
+    #productCard {
+        width: 300px !important;
+    }
+    #parent {
+        width: 310px !important;
+    }
+    #ordercard {
+        width: 320px !important;
+    }
+    .card {
+        width: 320px !important;
+    }
+    #background {
+        width: 310px !important;
+    }
+    #shoppingcard {
+        width: 320px !important;
+    }
+    .cardprofile {
+        width: 290px !important;
+        margin: 0px !important;
+    }
+    #profilerow {
+        margin-left: 0px;
+    }
+    .profiletop {
+        margin-left: 35px;
+    }
+    #mar {
+        padding: 0px;
+    }
+    #basketitem {
+        width: 280px !important;
+    }
+    .delivery {
+        width: 280px;
+    }
+    #shoppingfooter {
+        width: 280px !important;
+    }
+    #baskettd {
+        display: block !important;
+        text-align: center !important;
+        vertical-align: center !important;
+        margin-bottom: 0px !important;
+        margin-right: 0px;
+    }
+    #baskettr {
+        height: 320px !important;
+    }
+    #quantitybasket {
+        text-align: center;
+        margin: 0px;
+    }
+    .addtobaskethome {
+        width: 90px !important;
+        font-size: 10px;
+    }
+    #mobilenav {
+        width: 100px !important;
+    }
+    #quantity {
+        width: 150px !important;
+        text-align: center;
+    }
+    #totals {
+        width: 150px !important;
+        text-align: center;
+    }
+    #quantityrow {
+        text-align: center !important;
+        margin: 0px !important;
+    }
+    #btn1 {
+        margin-top: 20px;
+    }
+    #login-toggler {
+        margin-left: 30% !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .text {
+        font-size: 11px;
+    }
+    .navTop {
+        width: 360px;
+    }
+    .navBottom {
+        width: 360px;
+    }
+    #logincard {
+        width: 330px;
+    }
+    #homecontainer {
+        width: 360px;
+        margin: 0px;
+    }
+    #productCard {
+        width: 300px;
+    }
+    #parent {
+        width: 350px;
+    }
+    #ordercard {
+        width: 360px !important;
+        margin-left: 0px !important;
+    }
+    .card {
+        width: 360px;
+    }
+    #background {
+        width: 350px;
+    }
+    #shoppingcard {
+        width: 360px;
+    }
+    .cardprofile {
+        width: 330px;
+        margin-left: 10px !important;
+    }
+    #profilerow {
+        margin-left: 0px;
+    }
+    .profiletop {
+        margin-left: 50px;
+    }
+    #mar {
+        padding: 0px;
+    }
+    #basketitem {
+        width: 320px !important;
+    }
+    .delivery {
+        width: 320px !important;
+    }
+    #shoppingfooter {
+        width: 320px !important;
+    }
+    #baskettd {
+        display: block;
+        text-align: center;
+        vertical-align: center;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    #baskettr {
+        height: 320px !important;
+    }
+    #quantitybasket {
+        text-align: center;
+        margin: 0px;
+    }
+    .addtobaskethome {
+        width: 100px;
+        font-size: 10px;
+    }
+    #quantity {
+        width: 150px;
+        text-align: center;
+    }
+    #totals {
+        width: 150px;
+        text-align: center;
+    }
+    #quantityrow {
+        text-align: center;
+        margin: 0px !important;
+    }
+    #btn1 {
+        margin-top: 20px;
+    }
+    #login-toggler {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #login-toggler {
+        margin-left: 100px;
+    }
+    #login-container {
+        width: 400px;
+    }
+    #basketitem {
+        width: 330px;
+    }
+    .delivery {
+        width: 330px;
+    }
+    #shoppingfooter {
+        width: 330px;
+    }
+    #baskettd {
+        display: block;
+        text-align: center;
+        vertical-align: center;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    #baskettr {
+        height: 320px;
+    }
+    #quantitybasket {
+        text-align: center;
+        margin: 0px;
+    }
+    .addtobaskethome {
+        width: 90px;
+        font-size: 10px;
+    }
+    #shoppingcard {
+        width: 370px;
+    }
+    #mar {
+        padding: 0px;
+    }
+    #ordercard {
+        width: 375px;
+        margin-left: 0px !important;
+    }
+    #quantity {
+        width: 200px;
+        text-align: center;
+    }
+    #totals {
+        width: 200px;
+        text-align: center;
+    }
+    #quantityrow {
+        text-align: center;
+        margin: 0px !important;
+    }
+    #btn1 {
+        margin-top: 20px;
+    }
+    .navbar {
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 330px) {
+    #productImage {
+        border-radius: 10px 10px 0px 0px;
+        width: 50%;
+    }
+}
+
+#prof_pic {
+    margin-top: 0px;
+    border-radius: 50%;
+    width: 200px;
+    background: white;
+    border: 10px solid #28A745;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 414px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    #prof_pic {
+        width: 215px !important;
+        height: 215px !important;
+        margin-top: 0px;
+    }
+    .hovereffect {
+        width: 215px !important;
+        height: 215px !important;
+        margin-top: -90px;
+    }
+    .userinfo {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 15px !important;
+        text-align: right;
+        float: left;
+        width: 130px !important;
+    }
+    .userinfo2 {
+        text-align: left;
+        padding-top: 233px !important;
+        padding-bottom: 20px !important;
+        font-size: 15px !important;
+        margin-top: 80px;
+    }
+    .vl {
+        display: none;
+    }
+    .cardprofile {
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 90px;
+        margin-left: 30px;
+        width: 300px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .row {
+        width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+        padding: 5px 15px;
+    }
+    #backbtn {
+        display: none;
+    }
+    .productImage {
+        height: 300px;
+        width: 300px;
+        margin-right: 20px;
+    }
+    #loginav {
+        width: 400px;
+    }
+    .card-body {
+        width: 380px;
+    }
+    #shoppingcard {
+        width: 100%;
+    }
+    #shoppingtitle {
+        width: 380px !important;
+    }
+    #shoppinglower {
+        width: 480px !important;
+    }
+    #basketitem {
+        width: 340px;
+        font-size: 15px;
+    }
+    #basketimg {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+    }
+    .delivery {
+        width: 340px;
+    }
+    #shoppingfooter {
+        width: 340px;
+    }
+    #baskettd {
+        display: block;
+        text-align: center;
+        vertical-align: center;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    #baskettr {
+        height: 320px;
+    }
+    #quantitybasket {
+        text-align: center;
+        margin: 0px;
+    }
+    #photo {
+        margin-left: 9%;
+    }
+    .card {
+        width: 380px !important;
+    }
+    #btns {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    .card {
+        width: 80%;
+    }
+    #prod_con {
+        width: 80px;
+        height: 80px;
+    }
+    #homeprods {
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+    #homeprodcard {
+        width: 30% !important;
+    }
+    #homeprodinfo {
+        font-size: 10px !important;
+        width: 150px !important;
+    }
+    #homeprodimg {
+        margin-left: 40% !important;
+    }
+    #carouselimg {
+        height: 150px;
+        width: 90%;
+    }
+    #inputs {
+        width: 100%;
+        height: 100px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    #inputsright {
+        width: 100%;
+        height: 4%;
+        margin-top: 300px !important;
+    }
+    canvas {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    #header {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    .input2 {
+        width: 30px !important;
+    }
+    #notiftd {
+        height: 120px !important;
+    }
+    #productcard {
+        width: 380px !important;
+    }
+    .footer {
+        margin-top: 1000px !important;
+    }
+    #mobilenav {
+        width: 450px !important;
+    }
+    #productdetails {
+        width: 125px !important;
+        margin-right: 0% !important;
+    }
+    #productInfoButtons {
+        margin-top: 120px;
+    }
+    #proddescription {
+        width: 300px;
+    }
+    #login-toggler {
+        margin-left: 30%;
+    }
+    #quantity {
+        width: 200px;
+        text-align: center;
+    }
+    #totals {
+        width: 200px;
+        text-align: center;
+    }
+    #quantityrow {
+        text-align: center;
+        margin: 0px !important;
+    }
+    #btn1 {
+        margin-top: 20px;
+    }
+    #ordercard {
+        margin-left: 15px;
+    }
+    #mar {
+        padding: 0px;
+    }
+}
+
+.input2 {
+    width: 50px !important;
+}
+
+@media only screen and (max-width: 450px) {
+    #elogo {
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #basketimg {
+        width: 150px;
+    }
+    .navbar {
+        height: 13%;
+    }
+    #productImage {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+    }
+    #elogo {
+        width: 180px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 992px) {
+    .card-img-top {
+        height: 15vw;
+    }
+}
+
+#style-2 {
+    width: 300px !important;
+    height: 400px !important;
+}
+
+.dropdown-header {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    color: black;
+    white-space: nowrap;
+}
+
+//news
+#rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rows>div[class*='col-'] {
+    display: flex;
+}
+
+//cardss
