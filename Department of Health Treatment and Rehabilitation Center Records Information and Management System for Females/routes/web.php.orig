@@ -1,0 +1,491 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+Route::group(['middleware' =>'guest'], function()
+{
+	Route::any('/', [
+	'uses' => 'LoginController@home', 
+	'as' => 'login'
+]);
+
+Route::view('/register','register');
+
+Route::post('/loginnow', "LoginController@loginnow");
+
+Route::view('/login', "login");
+
+  
+});
+
+Route::get('/logout', "LoginController@logout");
+
+
+
+Route::group(['middleware' =>'auth'], function()
+{
+	 Route::get('/profile', [
+      	'uses'=>'LoginController@getProfile',
+      	'as'=> 'user.dashboard'
+    ]);
+
+	 Route::get('showUsers/{id}', [
+      	'uses'=>'ViewController@getUsers',
+      	'as'=> 'showUsers'
+    ]);
+
+	  Route::get('showDeps/{id}', [
+      	'uses'=>'ViewController@getDeps',
+      	'as'=> 'showDeps'
+    ]);
+
+    Route::get('/showCalendar', [
+      	'uses'=>'CalendarController@showCalen',
+      	'as'=> 'showCalendar'
+    ]);
+
+	 Route::get('/getEvent', ['as'=>'getEvent',
+    'uses'=>'CalendarController@get_Events'
+
+	]);
+
+	Route::get('/getDeps1', ['as'=>'getDeps1',
+    'uses'=>'CalendarController@get_Deps1'
+
+	]);
+	Route::get('/getDeps2', ['as'=>'getDeps2',
+    'uses'=>'CalendarController@get_Deps2'
+
+	]);  
+	Route::get('/getDeps3', ['as'=>'getDeps3',
+    'uses'=>'CalendarController@get_Deps3'
+
+	]);
+	Route::get('/getcountDeps1', ['as'=>'getcountDeps1',
+    'uses'=>'CalendarController@getcount_Deps1'
+
+	]);
+	Route::get('/getcountDeps2', ['as'=>'getcountDeps2',
+    'uses'=>'CalendarController@getcount_Deps2'
+
+	]);  
+	Route::get('/getcountDeps3', ['as'=>'getcountDeps3',
+    'uses'=>'CalendarController@getcount_Deps3'
+
+	]); 
+
+
+	 Route::any('/create_event/{date}', "CalendarController@create_event");
+
+	 Route::get('/event_patient/{id}', "CalendarController@event_patient");
+
+
+	 Route::any('/add_event', "CalendarController@add_event");
+
+	 Route::get('/view_event/{id}', "CalendarController@viewevent");
+
+	 Route::get('/cancel_event/{id}', "CalendarController@updateEvent");
+
+	 Route::get('/bar', 'CalendarController@chart');
+
+
+
+
+
+	 Route::post('/update_employeenow',"EmployeeController@update_employeenow");
+
+	 Route::post('/delete_employee', "EmployeeController@delete_employeenow");
+
+
+
+
+	 Route::delete('/delete/patient/{id}', "EventController@delete_patient_event");
+
+	 Route::any('/view/addpatient', "EventController@view_add_patient");
+
+	 Route::get('/view/vieweventattended', "EventController@view_event_attended");
+	 
+	 Route::post('/patient/attendIntervention/{id}', "EventController@patient_attend_intervention");
+
+	 	 Route::post('/patient/visitNoEvent/{id}', "EventController@patient_visit_noEvent");
+
+
+	Route::post('/event_save_edit', "EventController@event_save_edit");
+
+	Route::get('/getCurrentEvent/{id}', "EventController@getCurrentEvent");
+
+
+
+	  Route::any('/add_intervention', "InterventionController@addintervention");
+
+	 Route::any('/showIntervention', "InterventionController@showintervention");
+	 
+	 Route::any('/create_intervention', "InterventionController@create_intervention");
+
+	 Route::any('/viewIntervention/{id}', "InterventionController@viewIntervention");
+
+	 Route::any('/edit/intervention', "InterventionController@editintervention");
+
+	 Route::any('/update/intervention/{id}', "InterventionController@updateintervention");
+
+	 Route::any('deleteIntervention', "InterventionController@inactiveintervention");
+
+	 //Route::any('/inactive/intervention/{id}', "InterventionController@inactiveintervention");
+
+
+
+	// Route::get('/view/intervention', "InterventionController@findIntervention");
+
+
+	 Route::any('/patient/intervention', "InterventionController@patientInterven");
+
+
+
+
+
+	 Route::get('/markAsRead', "NotificationsController@markAsRead");
+
+
+
+
+	 Route::any('/add_a_city',"OthersController@add_a_city");
+
+	 Route::post('/add_city',"OthersController@addcity");
+
+	 Route::post('/delete_city',"OthersController@deletecity");
+
+	 Route::post('/activate_city',"OthersController@activatecity");
+
+	 Route::post('/delete_status',"OthersController@deletestatus");
+
+	 Route::post('/delete_gender',"OthersController@deletegender");
+
+	 Route::post('/delete_dabused',"OthersController@deletedabused");
+
+	 Route::post('/activate_status',"OthersController@activatestatus");
+
+	 Route::post('/activate_gender',"OthersController@activategender");
+
+	 Route::post('/activate_dabused',"OthersController@activatedabused");
+
+	 Route::any('/add_a_casetype',"OthersController@add_a_casetype");
+
+	 Route::post('/update_case',"OthersController@update_case");
+
+	 Route::post('/update_checklist',"OthersController@updatechecklist");
+
+	 Route::post('/delete_case',"OthersController@delete_case");
+
+	 Route::post('/activate_case',"OthersController@activate_case");
+
+	 Route::any('/add_a_checklist',"OthersController@add_a_checklist");
+
+	 Route::post('/add_checklist',"OthersController@addchecklist");
+
+	 Route::post('/delete_checklist',"OthersController@deletechecklist");
+
+	 Route::post('/update_checklist',"OthersController@updatechecklist");
+
+	 Route::post('/activate_checklist',"OthersController@activatechecklist");
+
+	 Route::any('/add_a_reason',"OthersController@add_a_reason");
+
+	 Route::post('/add_reason',"OthersController@add_reason");
+
+	 Route::post('/delete_reason',"OthersController@deletereason");
+
+	 Route::post('/activate_reason',"OthersController@activatereason");
+
+	 Route::post('/update_reason',"OthersController@updatereason");
+
+	 Route::any('/add_a_eduatain',"OthersController@add_a_eduatain");
+
+	 Route::post('/add_eduatain',"OthersController@addeduatain");
+
+	 Route::post('/delete_eduatain',"OthersController@deleteeduatain");
+
+	 Route::post('/activate_eduatain',"OthersController@activateeduatain");
+
+	 Route::post('/update_eduatain',"OthersController@updateeduatain");
+
+	  Route::any('/add_a_estat',"OthersController@add_a_estat");
+
+	 Route::post('/add_estat',"OthersController@addestat");
+
+	 Route::post('/delete_estat',"OthersController@deleteestat");
+
+	 Route::post('/activate_estat',"OthersController@activateestat");
+
+	 Route::post('/update_estat',"OthersController@updateestat");
+
+	 Route::any('/addpatient', "PatientController@addpatient");
+
+	 Route::post('/refer', "PatientController@refer");
+
+	 Route::any('/showpatients/{stat}', "PatientController@showpatient");
+
+	 Route::get('/viewpatient/{id}', "PatientController@viewpatient");
+
+	 Route::get('/viewemployee/{id}', "ViewController@viewemployee");
+
+	 Route::get('/viewuser/{id}', "ViewController@viewuser");
+
+	 Route::get('/viewuserx/{id}/{pid}', "ViewController@viewuserx");
+
+	 Route::get('/viewpatients/{id}/{pid}/{tid}', "PatientController@viewpatients");
+
+	 Route::get('/viewpatientx/{id}/{pid}/{gid}', "PatientController@viewpatientx");
+
+	 Route::get('/viewpatientz/{id}/{nid}', "PatientController@viewpatientz");
+
+	 Route::any('/patient_dep', "PatientController@patientdep");
+
+	 Route::get('/choosef/{id}', "PatientController@chooseform");
+
+	 Route::get('/intakeform/{id}', "PatientController@intakeform");
+
+	 Route::get('/ddeform/{id}', "PatientController@ddeform");
+
+	 Route::post('/patientsave_intake', "PatientController@save_intake");
+
+	 Route::post('/reenrollpatientsave_intake', "PatientController@reenrollsave_intake");
+
+	 Route::post('/patientsave_dde', "PatientController@save_dde");
+
+	 Route::post('/reenrollsave_dde', "PatientController@reenrollsave_dde");
+
+	 Route::post('/deletepatient', "PatientController@flagdelete");
+	 
+ 
+	 Route::post('/patientTransfer', "PatientController@transferPatient");
+
+	 Route::post('/admin_transfer_patient', "PatientController@adminpatientTransfer"); 
+
+	 Route::get('/transfer_patient_now/{id}/{did}/{tid}/{pid}',"PatientController@patientTransfer");
+
+	 Route::get('/transfer_decline_now/{id}/{did}/{tid}/{pid}',"PatientController@patientdeclineTransfer");
+
+	 Route::post('/patientDismiss',"PatientController@dismiss_patient");
+
+	 Route::post('/graduate_patient',"PatientController@graduate_patient");
+
+	 Route::post('/graduateadmin_patient',"PatientController@graduateadmin_patient");
+
+	 Route::get('/graduate_patient_now/{id}/{did}/{gid}/{pid}',"PatientController@patientGraduate");
+
+	 Route::get('/declinet_patient_now/{id}/{did}/{gid}/{pid}',"PatientController@declineGraduate");
+
+	 Route::post('/reenroll_patient',"PatientController@reenroll_patient");
+
+	 Route::post('/add_notes',"PatientController@doctor_notes");
+	 
+	 Route::post('/refers', "ReferController@createRefer");
+
+	 Route::get('/refers/{id}', "ReferController@getRefer");
+
+	 Route::put('/refers/{id?}', "ReferController@putRefer"); 
+
+//	 Route::put('/activation/{id?}', "ReferController@putInactiveActive"); 
+	 Route::post('/deletePatient', "ReferController@deletePatient"); 
+
+
+	 Route::post('/updatesocialworkernotes/{id}', "ReferController@updatesocialworkernotes");
+
+	 Route::post('/addsocialworkernotes/', "ReferController@addsocialworkernotes");
+
+	 Route::get('/findNotes/{id?}', "ReferController@findNotes");
+
+	 Route::any('/updateDentalNotes/{id?}', "ReferController@updateDentalNotes");
+
+<<<<<<< HEAD
+	 Route::post('/addsocialworkernotes', "ReferController@addsocialworkernotes");
+
+	 Route::get('/findNotes/{id?}', "ReferController@findNotes");
+
+	 Route::post('/addBMIrecords/{id}', "ReferController@addRecords"); 
+=======
+	 Route::post('/addBMIrecords/{id}', "ReferController@addRecords");
+>>>>>>> ddce1bd21f21f4f7e0da0759944ec206a0fc018a
+	 
+	Route::get('/getRecords/{id}', "ReferController@getRecords");
+
+ 	Route::post('/updateRecords/{recordType}/{id}', "ReferController@updateRecords");
+
+	 Route::post('/addDentalNotes', "ReferController@addDentalNotes");
+
+	 Route::post('/register_role', "RegisterController@register_role");
+
+	 Route::post('/register_dep', "RegisterController@register_dep");
+
+	 Route::post('/registernow', "RegisterController@registernow");
+
+	 Route::any('/newemployee',"RegisterController@newemployee");
+
+	 Route::post('/create_employee',"RegisterController@create_employee");
+
+	 Route::post('/update_employeenow',"EmployeeController@update_employeenow");
+
+	 Route::post('/delete_employee', "EmployeeController@delete_employeenow");
+
+	 Route::any('/logs', "ViewController@showlogs");
+
+	 Route::any('/show_my_logs/{id}', "ViewController@show_my_logs");
+
+	  Route::get('/create_service', "ServiceController@create_service");
+
+	 Route::post('/patientDismiss',"PatientController@dismiss_patient");
+
+	 Route::any('/show_services', "ServiceController@show_services");
+
+	 Route::get('/view/service', "ServiceController@viewService");
+
+	 Route::post('/add_service', "ServiceController@add_service");
+
+	 Route::post('/deleteServices', "ServiceController@inactiveService");
+
+<<<<<<< HEAD
+=======
+	 Route::post('/saveservices/{id}', "ServiceController@save_services");
+>>>>>>> ddce1bd21f21f4f7e0da0759944ec206a0fc018a
+
+	 Route::any('/show_jails', "ViewController@show_jails");
+
+	 Route::any('/reports', "ViewController@show_reports");
+
+	 Route::any('/show_dismiss_reason', "ViewController@show_dismiss_reason");
+
+	 Route::any('/show_civilstat', "ViewController@show_civilstat");
+
+	 Route::any('/show_gender', "ViewController@show_gender");
+
+	 Route::any('/show_dabused', "ViewController@show_dabused");
+
+	 Route::any('/add_a_city',"OthersController@add_a_city");
+
+	 Route::post('/add_city',"OthersController@addcity");
+
+	 Route::post('/update_city',"OthersController@updatecity");
+
+	 Route::any('/add_a_status',"OthersController@add_a_status");
+
+	 Route::post('/add_status',"OthersController@addstatus");
+
+	 Route::post('/update_civil_status',"OthersController@updatestatus");
+
+	 Route::any('/add_a_gender',"OthersController@add_a_gender");
+
+	 Route::post('/add_gender',"OthersController@addgender");
+
+	 Route::post('/update_gender',"OthersController@updategender");
+
+	 Route::any('/add_a_dabused',"OthersController@add_a_dabused");
+
+	 Route::post('/add_dabused',"OthersController@addabused");
+
+	 Route::post('/update_dabused',"OthersController@updatedabused");
+
+	 Route::any('/chooseuser', "UserController@chooseuser_role");
+	 
+	 Route::any('/createuserrole', "UserController@createuserrole");
+
+	 Route::post('/add_cityjail',"OthersController@addjail");
+
+	 Route::post('/delete_jail',"OthersController@deletejail");
+
+	 Route::post('/activate_jail',"OthersController@activatejail");
+
+	 Route::any('/add_a_city_jail',"OthersController@add_a_city_jail");
+
+	 Route::post('/update_jail',"OthersController@updatejail");
+
+	 Route::post('/delete_jail',"OthersController@deletejail");
+
+	 Route::post('/add_casetype',"OthersController@add_casetype");
+
+	 Route::any('/add_a_casetype',"OthersController@add_a_casetype");
+
+	 Route::get('/create_user/{id}', "UserController@create_user");
+
+	 Route::any('/create_dep', "UserController@postcreate_dep");
+
+	 Route::any('/create_depnow', "UserController@create_depnow");
+
+	 Route::post('/deletenow', "UserController@deletenow");
+
+	 Route::post('/updatenow', "UserController@updatenow");
+
+	 Route::post('/deleteuser', "UserController@deleteuser");
+
+	 Route::get('/getlist',"ViewController@getlist");
+
+	 Route::post('/upload_file_checklist',"UploadController@uploadfilechecklist");
+
+	 Route::post('/delete_file_checklist',"UploadController@deletefilechecklist");
+
+	 Route::post('/samplecsv',"ViewController@samplecsv");
+
+	 Route::post('/downloadcsv',"ViewController@downloadcsv");
+
+	 Route::post('/graduate_patient',"PatientController@graduate_patient");
+
+	 Route::post('/graduateadmin_patient',"PatientController@graduateadmin_patient");
+
+	 Route::get('/graduate_patient_now/{id}/{did}/{gid}/{pid}',"PatientController@patientGraduate");
+
+	 Route::get('/showdep_users/{did}/{rid}', "ViewController@showdepuser");
+
+	 Route::any('/showemployees',"ViewController@showemployees");
+
+	 Route::any('/logs', "ViewController@showlogs");
+
+	 Route::any('/show_case_types', "ViewController@show_case_types");
+
+	 Route::any('/show_cities', "ViewController@show_cities");
+
+	 Route::any('/show_jails', "ViewController@show_jails");
+
+	 Route::any('/show_dismiss_reason', "ViewController@show_dismiss_reason");
+
+	 Route::any('/show_eduatain', "ViewController@show_eduatain");
+
+	 Route::any('/show_estat', "ViewController@show_estat");
+
+	 Route::any('/show_checklist', "ViewController@show_checklist");
+
+	 Route::get('/show_sub_checklist/{id}', "ViewController@show_sub_checklist");
+
+	 Route::any('/sampleform/{id}',"ViewController@sampleform");
+
+	 Route::any('/pdfintake/{id}',"ViewController@pdfintake");
+
+	 Route::any('/pdfdde/{id}',"ViewController@pdfdde");
+
+<<<<<<< HEAD
+	 Route::any('/pdfreferral/{id}/{rid}',"ViewController@pdfreferral");
+=======
+	 Route::any('/doctorsNotes/{recordType}/{id}',"ViewController@doctorsNotes");
+
+	 Route::any('/dentalNotes/{id}',"ViewController@dentalNotes");
+>>>>>>> ddce1bd21f21f4f7e0da0759944ec206a0fc018a
+
+	 Route::post('/reenroll_patient',"PatientController@reenroll_patient");
+
+	 Route::post('/add_notes',"PatientController@doctor_notes");
+
+	 Route::post('/changepassword',"UserController@change_pass");
+
+	 Route::get('/file','UploadController@index');
+
+	 Route::post('/store','UploadController@store')->name('upload.file');
+
+	 Route::get('/show','UploadController@show');
+	 
+});

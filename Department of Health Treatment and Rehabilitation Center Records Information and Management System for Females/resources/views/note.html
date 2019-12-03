@@ -1,0 +1,42 @@
+<html>
+<input type="radio" name="type" value="Fresher"> Fresher
+<input type="radio" name="type" value="Experienced"> Experienced
+
+<div id="textboxes" style="display: none">
+	Company Name: <input type="text" hidden="true"/>
+	Designation: <input type="text" hidden="true"/>
+	Year_of_Experience: <input type="text" hidden="true"/>
+</div>
+
+
+<form name="myform">
+<table>
+<tr>
+<td>
+<select name="one" onchange="if (this.value=='other'){this.form['other'].style.visibility='visible'}
+	else {this.form['other'].style.visibility='hidden'};">
+	<option value="" selected="selected">Select....</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="other">Other</option>
+</select>
+	<input type="textbox" name="other" style="visbility:hidden;"/>
+</td>
+</tr>
+</table>
+</form>
+</html>
+
+
+<script>
+$(function() {
+	$('input[name="type"]').on('click', function(){
+		if ($(this).val() == 'Experienced') {
+			$('#textboxes').show();
+		}
+		else {
+			$('#textboxes').hide();
+		}
+	});
+});
+</script>

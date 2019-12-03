@@ -1,0 +1,29 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use App\Visit_interven;
+
+
+class Events extends Model
+{
+ 
+<<<<<<< HEAD
+  protected $fillable = ['id', 'evt_id','title','status','venue','description','start','end', 'start_date', 'end_date', 'start_time', 'end_time','color','department_id'];
+=======
+  protected $fillable = ['evt_id','title','status','venue','start','end', 'start_date', 'end_date', 'start_time', 'end_time','color','department_id'];
+>>>>>>> 21be206bf59555f9fb188f183514af37f520f2be
+
+
+  public function Departments()
+    {
+        return $this->belongsTo('App\Departments','department_id');
+    }
+
+    public function interven()
+    {
+        return $this->hasMany(Visit_interven::class,'event_id');
+    }
+
+}
