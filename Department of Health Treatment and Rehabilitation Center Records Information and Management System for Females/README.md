@@ -7,6 +7,7 @@ Laravel Framework: v. 5.8.35
 Composer: v. 1.8.4
 Node J.S: v. 10.15.3
 Git: Version 2.21.0
+
 Operating System: Windows 10/ Windows 7
 
 1. Download Sumblime Text3 (https://www.sublimetext.com/3).
