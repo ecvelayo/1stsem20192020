@@ -41,13 +41,13 @@ password: admin12345<br>
 
 
 Troubleshoot: <br>
-All users:
-Session Expire: Refresh the browser and relogin to your account.
-Notification bell: If the notification doesn`t update please refresh the page.
+All users:<br>
+Session Expire: Refresh the browser and relogin to your account.<br>
+Notification bell: If the notification doesn`t update please refresh the page.<br>
 
-Admin user: 
+Admin user: <br>
 Manage Order Page: When accepting/declining an order doesn`t show alert messege, Please load the nexmo account for SMS notification 
-because it will not save to transaction table on the database if the SMS notification will not work.
+because it will not save to transaction table on the database if the SMS notification will not work.<br>
 
 
 
