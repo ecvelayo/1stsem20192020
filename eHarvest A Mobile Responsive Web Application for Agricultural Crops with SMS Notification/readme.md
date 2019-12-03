@@ -40,7 +40,7 @@ password: admin12345<br>
 
 
 
-**Troubleshoot: **<br>
+**Troubleshoot:**<br>
 All users:<br>
 Session Expire: Refresh the browser and relogin to your account.<br>
 Notification bell: If the notification doesn`t update please refresh the page.<br>
