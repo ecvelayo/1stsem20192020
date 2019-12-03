@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------
 **System Requirements** <br>
 <br>
-	Hardware Requirements<br>
+	**Hardware Requirements**<br>
 		Processor:				Intel Core i5 or higher<br>
 		Memory:			    4GB RAM or higher<br>
 		SSD/HDD:					    Free Disk Space 1GB<br>
@@ -9,7 +9,7 @@
 		Processor Speed:				2.0 ghz or higher<br>
 
 	 
-   Software Requirements<br>
+  **Software Requirements**<br>
 		Source Code Editor:				Visual Studio Code <br>
 		PHP:	 					    Version 7.3.3<br>
 		Laravel Framework:	 			Version  5.8.35<br>
@@ -18,7 +18,7 @@
 		Operating System:	 			Windows 10<br>
 
 
-*Installation*<br>
+**Installation**<br>
 
 Step 1.Download and install the latest version of XAMPP on the website 
 (https://www.apachefriends.org/download.html).<br>
@@ -34,18 +34,18 @@ Step 7. Open new terminal and type "npm run watch".<br>
 Step 8. Open Google Chrome Browser and type: http://localhost:8000/<br>
 <br>
 
-Default user:<br>
+**Default user:**<br>
 email: admin@gmail.com<br>
 password: admin12345<br>
 
 
 
-Troubleshoot: <br>
+**Troubleshoot: **<br>
 All users:<br>
 Session Expire: Refresh the browser and relogin to your account.<br>
 Notification bell: If the notification doesn`t update please refresh the page.<br>
 
-Admin user: <br>
+**Admin user:** <br>
 Manage Order Page: When accepting/declining an order doesn`t show alert messege, Please load the nexmo account for SMS notification 
 because it will not save to transaction table on the database if the SMS notification will not work.<br>
 
