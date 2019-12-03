@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------
 *System Requirements* <br>
-User:<br>
+<br>
 	Hardware Requirements<br>
 		Processor				Intel Core i5 or higher<br>
 		Memory				    4GB RAM or higher<br>
