@@ -1,0 +1,45 @@
+.myChart {
+    // width: 900px !important;
+    // height: 400px !important;
+    top: 50% !important;
+}
+
+// Area Chart
+.chart-area {
+    position: relative;
+    height: 10rem;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        height: 20rem;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 20rem;
+        width: 100% !important;
+    }
+}
+
+// Pie Chart
+.chart-pie {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        height: calc(20rem - 43px) !important;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 50% !important;
+        margin-left: 25px;
+    }
+}
+
+.homer {
+    color: #813838;
+    background-color: #fee2e1;
+    border-color: #fdd6d6;
+    padding: 10px;
+}
+
+#report {
+    text-decoration: none;
+    color: black;
+}
