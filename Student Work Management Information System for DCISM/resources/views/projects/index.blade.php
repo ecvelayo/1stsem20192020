@@ -1,0 +1,193 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                @if(!Auth::user()->isRole('admin')) @endif
+                    @if(session('message'))
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="alert alert-success">
+                                {{ session('message') }}
+                            </div>
+                        </div>
+                    </div>
+                @endif
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        List of all projects
+                        @if(in_array(Auth::user()->user_role, [\App\User::USER_TYPE_ADMIN, \App\User::USER_TYPE_ADVISER]))
+                            <form class="form-inline" method="get">
+                                {{--<div class="form-group d-none">--}}
+                                {{--<label class="mr-2">Academic Year</label>--}}
+                                {{--<select name="academic_year" id="" class="form-control">--}}
+                                {{--@foreach(range(date('Y'), 1999, -1) as $year)--}}
+                                {{--<option value="{{ $year }}">{{ $year }}</option>--}}
+                                {{--@endforeach--}}
+                                {{--</select>--}}
+                                {{--</div>--}}
+                                {{--<div class="form-group ml-2 d-none">--}}
+                                {{--<label class="mr-2">Semester</label>--}}
+                                {{--<select name="semester" id="" class="form-control">--}}
+                                {{--<option value="">All</option>--}}
+                                {{--<option value="1">1st Sem</option>--}}
+                                {{--<option value="2">2nd Sem</option>--}}
+                                {{--</select>--}}
+                                {{--</div>--}}
+                                <div class="form-group ml-2">
+                                    <label class="mr-2">Title</label>
+                                    <input type="text" name="title" class="form-control" value="{{ request('title') }}">
+                                </div>
+                                <!-- <div class="form-group ml-2">
+                                        <label class="mr-2">Call Number</label>
+                                        <select name="call_number" id="" class="form-control">
+                                            <option value=""></option>
+                                            <option value="with_call_number" {{ request('call_number') === 'with_call_number' ? 'selected' : '' }}>With Call Number</option>
+                                            <option value="without_call_number" {{ request('call_number') === 'without_call_number' ? 'selected' : '' }}>
+                                                Without Call Number
+                                            </option>
+                                        </select>
+                                    </div> -->
+                                @if(Auth::user()->isRole(\App\User::USER_TYPE_ADVISER))
+                                    <div class="form-group ml-2">
+                                        <label class="mr-2">Status</label>
+                                        <select name="status" id="" class="form-control">
+                                            <option value="">All Projects</option>
+
+                                            <option value="pending" {{ request('status') === 'pending' ? 'selected' : '' }}>
+                                                Pending Projects
+                                            </option>
+                                            <option value="approved" {{ request('status') === 'approved' ? 'selected' : '' }}>
+                                                Approved Projects
+                                            </option>
+                                        </select>
+                                    </div>
+                                    
+                                @endif
+                                @if(Auth::user()->isRole(\App\User::USER_TYPE_ADMIN))
+                                    <div class="form-group ml-2">
+                                        <label class="mr-2">Adviser</label>
+                                        <select name="adviser_id" id="" class="form-control select2">
+                                            <option value="">*ALL ADVISERS*</option>
+                                            @foreach($advisers AS $id => $name)
+                                                <option value="{{$id}}" {{ (int)request('adviser_id') === (int)$id ? 'selected' : ''}}>{{$name}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="form-group ml-2">
+                                        <label class="mr-2">Call Number</label>
+                                        <select name="call_number" id="" class="form-control">
+                                            <option value=""></option>
+                                            <option value="with_call_number" {{ request('call_number') === 'with_call_number' ? 'selected' : '' }}>With Call Number</option>
+                                            <option value="without_call_number" {{ request('call_number') === 'without_call_number' ? 'selected' : '' }}>
+                                                Without Call Number
+                                            </option>
+                                        </select>
+                                    </div>
+                                @endif
+                                <button type="submit" class="btn btn-secondary ml-2">Search</button>
+
+                            </form>
+                        @endif
+                        @if(!Auth::user()->isRole('adviser'))
+                            <a class="btn btn-success px-3" href="{{ url('projects/create') }}">Create new project</a>
+                        @endif
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table mb-0 table-hover table-striped">
+                            <thead>
+                            <tr class="bg-primary text-white">
+                                <th></th>
+                                <th>Project Title</th>
+                                <th>Defense Date</th>
+                                <th>Authors</th>
+                                <th>Panelist</th>
+                                <th>Adviser</th>
+                                <th>Subject Area</th>
+                                <th>Call Number</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @forelse($projects as $project)
+                                <tr>
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>
+                                        {{ $project->title }}
+                                        <br>
+                                        <a href="{{ url($project->getPreviewLink()) }}" target="_blank" class="mr-3">Preview</a>
+                                    </td>
+                                    <td>
+                                        {{ date_create_immutable($project->date_submitted)->format('F Y') }}
+                                    </td>
+                                    <td>
+                                        <ol class="pl-3">
+                                            <li>{!! $project->authors->implode('fullname', '</li><li>') !!}</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol class="pl-3">
+                                            Chair Panel: 
+                                            <li>{{ isset($project->chair_panel) ? $project->chair_panel->fullname : '' }}</li>
+                                        </ol>
+                                        <ol class="pl-3">
+                                            Panel Members: 
+                                            <li>{!! isset($project->panel) ? $project->panel->implode('fullname', '</li><li>') : '' !!}</li>
+                                        </ol>
+                                    </td>
+                                    
+                                    <td>{{ isset($project->adviser) ? $project->adviser->fullname : '' }}</td>
+                                    <td>{{ isset($project->area) ? $project->area->name : ''}}</td>
+                                    <td>{{ $project->call_number ? $project->call_number : 'N/A' }}</td>
+                                    <td>
+                                        @if($project->is('pending'))
+                                            <span class="d-block badge badge-secondary text-white mb-3">PENDING</span>
+                                       @elseif($project->is('rejected'))
+                                            <span class="d-block badge badge-danger text-white mb-3">REJECTED</span>
+                                        @else
+                                            <span class="d-block badge badge-success text-white mb-3">APPROVED</span>
+                                        @endif
+
+                                        @if(Auth::user()->isRole('adviser'))
+                                            <a href="{{ url("my-handled-projects/{$project->id}") }}" class="mr-2">Review</a>
+                                            @if($project->is('pending'))
+                                                <a href="{{ url("projects/{$project->id}/edit") }}"
+                                                   class="btn btn-info btn-block mb-2">Edit</a>
+                                            @endif
+                                        @else
+                                            <a href="{{ url("projects/{$project->id}/edit") }}"
+                                               class="btn btn-info btn-block mb-2">Edit</a>
+                                            @if($project->is('pending'))
+                                                <form method="post" action="{{ url("projects/{$project->id}") }}"
+                                                      onsubmit="javascript: return confirm('Are you sure?')">
+                                                    <button type="submit" class="btn btn-danger  btn-block">Delete
+                                                    </button>
+                                                    @csrf
+                                                    @method('delete')
+                                                </form>
+                                            @elseif(Auth::user()->isRole('admin'))
+                                            <form method="post" action="{{ url("projects/{$project->id}") }}"
+                                                      onsubmit="javascript: return confirm('Are you sure?')">
+                                                    <button type="submit" class="btn btn-danger  btn-block">Delete
+                                                    </button>
+                                                    @csrf
+                                                    @method('delete')
+                                                </form> 
+                                            @endif
+                                        @endif
+                                    </td>
+                                </tr>
+                            @empty
+                            @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="text-center mt-2 d-flex justify-content-center">
+                    {{ $projects->appends(request()->all())->links() }}
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
