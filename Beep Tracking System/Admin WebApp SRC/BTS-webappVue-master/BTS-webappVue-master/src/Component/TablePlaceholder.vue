@@ -1,0 +1,1 @@
+<template> <td :colspan="colspanLength"> <div class="ui fluid placeholder"> <div class="paragraph"> <div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div></div></td></template><script>export default{props: ['colspanLength']}</script>

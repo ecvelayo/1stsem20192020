@@ -1,0 +1,546 @@
+[  +17 ms] executing: [C:\src\flutter\] git log -n 1 --pretty=format:%H
+[  +58 ms] Exit code 0 from: git log -n 1 --pretty=format:%H
+[        ] 68587a0916366e9512a78df22c44163d041dd5f3
+[        ] executing: [C:\src\flutter\] git describe --match v*.*.* --first-parent --long --tags
+[  +51 ms] Exit code 0 from: git describe --match v*.*.* --first-parent --long --tags
+[        ] v1.9.1+hotfix.6-0-g68587a091
+[ +176 ms] executing: [C:\src\flutter\] git rev-parse --abbrev-ref --symbolic @{u}
+[ +123 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[        ] origin/stable
+[        ] executing: [C:\src\flutter\] git ls-remote --get-url origin
+[ +131 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] https://github.com/flutter/flutter.git
+[  +62 ms] executing: [C:\src\flutter\] git rev-parse --abbrev-ref HEAD
+[  +31 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] stable
+[  +31 ms] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[  +54 ms] Found plugin cloud_firestore at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\cloud_firestore-0.12.10\
+[   +5 ms] Found plugin firebase_auth at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\firebase_auth-0.14.0+8\
+[   +1 ms] Found plugin firebase_core at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\firebase_core-0.4.1+5\
+[   +4 ms] Found plugin geoflutterfire at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\geoflutterfire-2.0.3+5\
+[   +1 ms] Found plugin geolocator at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\geolocator-5.1.5\
+[   +1 ms] Found plugin google_api_availability at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\google_api_availability-2.0.1\
+[   +1 ms] Found plugin google_maps_flutter at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\google_maps_flutter-0.5.21+10\
+[   +2 ms] Found plugin location_permissions at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\location_permissions-2.0.3\
+[  +39 ms] Found plugin cloud_firestore at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\cloud_firestore-0.12.10\
+[   +3 ms] Found plugin firebase_auth at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\firebase_auth-0.14.0+8\
+[   +1 ms] Found plugin firebase_core at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\firebase_core-0.4.1+5\
+[   +3 ms] Found plugin geoflutterfire at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\geoflutterfire-2.0.3+5\
+[   +1 ms] Found plugin geolocator at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\geolocator-5.1.5\
+[        ] Found plugin google_api_availability at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\google_api_availability-2.0.1\
+[        ] Found plugin google_maps_flutter at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\google_maps_flutter-0.5.21+10\
+[   +1 ms] Found plugin location_permissions at C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\location_permissions-2.0.3\
+[  +49 ms] You are building a fat APK that includes binaries for android-arm, android-arm64.
+[        ] If you are deploying the app to the Play Store, it's recommended to use app bundles or split the APK to reduce the APK size.
+[        ]     To generate an app bundle, run:
+[        ]         flutter build appbundle --target-platform android-arm,android-arm64
+[        ]         Learn more on: https://developer.android.com/guide/app-bundle
+[        ]     To split the APKs per ABI, run:
+[        ]         flutter build apk --target-platform android-arm,android-arm64 --split-per-abi
+[        ]         Learn more on:  https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
+[  +14 ms] Initializing gradle...
+[        ] Using gradle from C:\src\Capstone\bts_driverapp\android\gradlew.bat.
+[  +91 ms] executing: C:\src\Capstone\bts_driverapp\android\gradlew.bat -v
+[ +539 ms] 
+           ------------------------------------------------------------
+           Gradle 5.6
+           ------------------------------------------------------------
+
+           Build time:   2019-08-14 21:05:25 UTC
+           Revision:     f0b9d60906c7b8c42cd6c61a39ae7b74767bb012
+
+           Kotlin:       1.3.41
+           Groovy:       2.5.4
+           Ant:          Apache Ant(TM) version 1.9.14 compiled on March 12 2019
+           JVM:          1.8.0_202-release (JetBrains s.r.o 25.202-b03)
+           OS:           Windows 10 10.0 amd64
+[   +6 ms] Initializing gradle... (completed in 0.6s)
+[   +7 ms] Resolving dependencies...
+[        ] executing: [C:\src\Capstone\bts_driverapp\android\] C:\src\Capstone\bts_driverapp\android\gradlew.bat app:properties
+[+1450 ms] 
+           > Configure project :flutter
+           WARNING: API 'variantOutput.getProcessResources()' is obsolete and has been replaced with 'variantOutput.getProcessResourcesProvider()'.
+           It will be removed at the end of 2019.
+           For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+           To determine what is calling variantOutput.getProcessResources(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+           > Configure project :geoflutterfire
+           WARNING: API 'variant.getPackageLibrary()' is obsolete and has been replaced with 'variant.getPackageLibraryProvider()'.
+           It will be removed at the end of 2019.
+           For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+           To determine what is calling variant.getPackageLibrary(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+           > Task :app:properties
+
+           ------------------------------------------------------------
+           Project :app
+           ------------------------------------------------------------
+
+           INTERNAL__CHECKED_MINIMUM_PLUGIN_VERSIONS: true
+           _internalAndroidGradlePluginDependencyCheckerRegistered: true
+           allprojects: [project ':app']
+           android: com.android.build.gradle.internal.dsl.BaseAppModuleExtension_Decorated@62e60caf
+           android.enableJetifier: true
+           android.useAndroidX: true
+           ant: org.gradle.api.internal.project.DefaultAntBuilder@73b62fd9
+           antBuilderFactory: org.gradle.api.internal.project.DefaultAntBuilderFactory@48a1336b
+           archivesBaseName: app
+           artifacts: org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@2b6f7af4
+           asDynamicObject: DynamicObject for project ':app'
+           autoTargetJvmDisabled: false
+           baseClassLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@79be9842
+           buildDir: C:\src\Capstone\bts_driverapp\build\host
+           buildFile: C:\src\Capstone\bts_driverapp\android\app\build.gradle
+           buildOutputs: BaseVariantOutput container
+           buildPath: :
+           buildScriptSource: org.gradle.groovy.scripts.TextResourceScriptSource@3b34a84b
+           buildscript: org.gradle.api.internal.initialization.DefaultScriptHandler@7acfee2d
+           childProjects: {}
+           class: class org.gradle.api.internal.project.DefaultProject_Decorated
+           classLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@2aa7835a
+           components: SoftwareComponentInternal set
+           configurationActions: org.gradle.configuration.project.DefaultProjectConfigurationActionContainer@27d662c4
+           configurationTargetIdentifier: org.gradle.configuration.ConfigurationTargetIdentifier$1@39bef085
+           configurations: configuration container
+           convention: org.gradle.api.internal.plugins.DefaultConvention@3c05df19
+           defaultArtifacts: org.gradle.api.internal.plugins.DefaultArtifactPublicationSet_Decorated@2a2e2690
+           defaultTasks: []
+           deferredProjectConfiguration: org.gradle.api.internal.project.DeferredProjectConfiguration@3efaa153
+           dependencies: org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler_Decorated@708e44d1
+           dependencyLocking: org.gradle.internal.locking.DefaultDependencyLockingHandler_Decorated@62e1a0ce
+           depth: 1
+           description: null
+           displayName: project ':app'
+           distsDir: C:\src\Capstone\bts_driverapp\build\host\distributions
+           distsDirName: distributions
+           docsDir: C:\src\Capstone\bts_driverapp\build\host\docs
+           docsDirName: docs
+           ext: org.gradle.internal.extensibility.DefaultExtraPropertiesExtension@39a000a4
+           extensions: org.gradle.api.internal.plugins.DefaultConvention@3c05df19
+           fileOperations: org.gradle.api.internal.file.DefaultFileOperations@52bbdefa
+           fileResolver: org.gradle.api.internal.file.BaseDirFileResolver@5011b0b0
+           googleServices: com.google.gms.googleservices.GoogleServicesPlugin$GoogleServicesPluginConfig_Decorated@3f198dac
+           gradle: build 'android'
+           group: android
+           identityPath: :app
+           inheritedScope: org.gradle.internal.extensibility.ExtensibleDynamicObject$InheritedDynamicObject@6051fcb
+           java: org.gradle.api.plugins.internal.DefaultJavaPluginExtension_Decorated@ac55dff
+           kotlin.plugin.loaded.in.projects.1.3.31: :geoflutterfire
+           layout: org.gradle.api.internal.file.DefaultProjectLayout@578ce827
+           libsDir: C:\src\Capstone\bts_driverapp\build\host\libs
+           libsDirName: libs
+           listenerBuildOperationDecorator: org.gradle.configuration.internal.DefaultListenerBuildOperationDecorator@248b7b97
+           logger: org.gradle.internal.logging.slf4j.OutputEventListenerBackedLogger@fb42b0f
+           logging: org.gradle.internal.logging.services.DefaultLoggingManager@a5ec38a
+           modelRegistry: org.gradle.model.internal.registry.DefaultModelRegistry@2ad44d9b
+           modelSchemaStore: org.gradle.model.internal.manage.schema.extract.DefaultModelSchemaStore@555a56eb
+           module: org.gradle.api.internal.artifacts.ProjectBackedModule@61e025a3
+           mutationState: project :app
+           name: app
+           normalization: org.gradle.normalization.internal.DefaultInputNormalizationHandler_Decorated@1a294536
+           objects: org.gradle.api.internal.model.DefaultObjectFactory@6501c227
+           org.gradle.jvmargs: -Xmx1536M
+           parent: root project 'android'
+           parentIdentifier: root project 'android'
+           path: :app
+           pluginManager: org.gradle.api.internal.plugins.DefaultPluginManager_Decorated@19bf0f9e
+           plugins: [org.gradle.api.plugins.HelpTasksPlugin@110f21a7, org.gradle.buildinit.plugins.BuildInitPlugin@41dfd645, org.gradle.buildinit.plugins.WrapperPlugin@2a2424a3, com.android.build.gradle.api.AndroidBasePlugin@4b061d86, org.gradle.language.base.plugins.LifecycleBasePlugin@236c1f58, org.gradle.api.plugins.BasePlugin@1c3e988e, org.gradle.api.plugins.ReportingBasePlugin@1734b696, org.gradle.api.plugins.JavaBasePlugin@6c2563db, com.android.build.gradle.AppPlugin@2f7027d8, com.google.gms.googleservices.GoogleServicesPlugin@47e22050]
+           processDebugGoogleServices: task ':app:processDebugGoogleServices'
+           processDebugManifest: task ':app:processDebugManifest'
+           processOperations: org.gradle.process.internal.DefaultExecActionFactory$DecoratingExecActionFactory@7550be3c
+           processProfileGoogleServices: task ':app:processProfileGoogleServices'
+           processProfileManifest: task ':app:processProfileManifest'
+           processReleaseGoogleServices: task ':app:processReleaseGoogleServices'
+           processReleaseManifest: task ':app:processReleaseManifest'
+           project: project ':app'
+           projectConfigurator: org.gradle.api.internal.project.BuildOperationCrossProjectConfigurator@322c20f6
+           projectDir: C:\src\Capstone\bts_driverapp\android\app
+           projectEvaluationBroadcaster: ProjectEvaluationListener broadcast
+           projectEvaluator: org.gradle.configuration.project.LifecycleProjectEvaluator@1c4c9f8c
+           projectPath: :app
+           projectRegistry: org.gradle.api.internal.project.DefaultProjectRegistry@4a7accf5
+           properties: {...}
+           providers: org.gradle.api.internal.provider.DefaultProviderFactory@1a8472f8
+           publicType: org.gradle.api.plugins.BasePluginConvention
+           reporting: org.gradle.api.reporting.ReportingExtension_Decorated@3aab3ad8
+           reportsDir: C:\src\Capstone\bts_driverapp\build\host\reports
+           repositories: repository container
+           resourceLoader: org.gradle.internal.resource.transfer.DefaultUriTextResourceLoader@695386eb
+           resources: org.gradle.api.internal.resources.DefaultResourceHandler@111bd4b2
+           rootDir: C:\src\Capstone\bts_driverapp\android
+           rootProject: root project 'android'
+           script: false
+           scriptHandlerFactory: org.gradle.api.internal.initialization.DefaultScriptHandlerFactory@d9aaf00
+           scriptPluginFactory: org.gradle.configuration.ScriptPluginFactorySelector@6e843991
+           serviceRegistryFactory: org.gradle.internal.service.scopes.ProjectScopeServices$4@1b959e74
+           services: ProjectScopeServices
+           sourceCompatibility: 1.8
+           sourceSets: SourceSet container
+           standardOutputCapture: org.gradle.internal.logging.services.DefaultLoggingManager@a5ec38a
+           state: project state 'EXECUTED'
+           status: integration
+           subprojects: []
+           targetCompatibility: 1.8
+           tasks: task set
+           testReportDir: C:\src\Capstone\bts_driverapp\build\host\reports\tests
+           testReportDirName: tests
+           testResultsDir: C:\src\Capstone\bts_driverapp\build\host\test-results
+           testResultsDirName: test-results
+           version: unspecified
+           1 actionable task: 1 executed
+[   +1 ms] executing: [C:\src\Capstone\bts_driverapp\android\] C:\src\Capstone\bts_driverapp\android\gradlew.bat app:tasks --all --console=auto
+[+2145 ms] 
+           > Configure project :flutter
+           WARNING: API 'variantOutput.getProcessResources()' is obsolete and has been replaced with 'variantOutput.getProcessResourcesProvider()'.
+           It will be removed at the end of 2019.
+           For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+           To determine what is calling variantOutput.getProcessResources(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+           > Configure project :geoflutterfire
+           WARNING: API 'variant.getPackageLibrary()' is obsolete and has been replaced with 'variant.getPackageLibraryProvider()'.
+           It will be removed at the end of 2019.
+           For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+           To determine what is calling variant.getPackageLibrary(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+           > Task :app:tasks
+
+           ------------------------------------------------------------
+           Tasks runnable from project :app
+           ------------------------------------------------------------
+
+           Android tasks
+           -------------
+           androidDependencies - Displays the Android dependencies of the project.
+           signingReport - Displays the signing info for the base and test modules
+           sourceSets - Prints out all the source sets defined in this project.
+
+           Build tasks
+           -----------
+           assemble - Assemble main outputs for all the variants.
+           assembleAndroidTest - Assembles all the Test applications.
+           build - Assembles and tests this project.
+           buildDependents - Assembles and tests this project and all projects that depend on it.
+           buildNeeded - Assembles and tests this project and all projects it depends on.
+           bundle - Assemble bundles for all the variants.
+           clean - Deletes the build directory.
+           cleanBuildCache - Deletes the build cache directory.
+           compileDebugAndroidTestSources
+           compileDebugSources
+           compileDebugUnitTestSources
+           compileProfileSources
+           compileProfileUnitTestSources
+           compileReleaseSources
+           compileReleaseUnitTestSources
+
+           Cleanup tasks
+           -------------
+           lintFix - Runs lint on all variants and applies any safe suggestions to the source code.
+
+           Help tasks
+           ----------
+           buildEnvironment - Displays all buildscript dependencies declared in project ':app'.
+           components - Displays the components produced by project ':app'. [incubating]
+           dependencies - Displays all dependencies declared in project ':app'.
+           dependencyInsight - Displays the insight into a specific dependency in project ':app'.
+           dependentComponents - Displays the dependent components of components in project ':app'. [incubating]
+           help - Displays a help message.
+           model - Displays the configuration model of project ':app'. [incubating]
+           projects - Displays the sub-projects of project ':app'.
+           properties - Displays the properties of project ':app'.
+           tasks - Displays the tasks runnable from project ':app'.
+
+           Install tasks
+           -------------
+           installDebug - Installs the Debug build.
+           installDebugAndroidTest - Installs the android (on device) tests for the Debug build.
+           installProfile - Installs the Profile build.
+           installRelease - Installs the Release build.
+           uninstallAll - Uninstall all applications.
+           uninstallDebug - Uninstalls the Debug build.
+           uninstallDebugAndroidTest - Uninstalls the android (on device) tests for the Debug build.
+           uninstallProfile - Uninstalls the Profile build.
+           uninstallRelease - Uninstalls the Release build.
+
+           Verification tasks
+           ------------------
+           check - Runs all checks.
+           connectedAndroidTest - Installs and runs instrumentation tests for all flavors on connected devices.
+           connectedCheck - Runs all device checks on currently connected devices.
+           connectedDebugAndroidTest - Installs and runs the tests for debug on connected devices.
+           deviceAndroidTest - Installs and runs instrumentation tests using all Device Providers.
+           deviceCheck - Runs all device checks using Device Providers and Test Servers.
+           lint - Runs lint on all variants.
+           lintDebug - Runs lint on the Debug build.
+           lintProfile - Runs lint on the Profile build.
+           lintRelease - Runs lint on the Release build.
+           lintVitalRelease - Runs lint on just the fatal issues in the release build.
+           test - Run unit tests for all variants.
+           testDebugUnitTest - Run unit tests for the debug build.
+           testProfileUnitTest - Run unit tests for the profile build.
+           testReleaseUnitTest - Run unit tests for the release build.
+
+           Other tasks
+           -----------
+           assembleDebug - Assembles main output for variant debug
+           assembleDebugAndroidTest - Assembles main output for variant debugAndroidTest
+           assembleDebugUnitTest - Assembles main output for variant debugUnitTest
+           assembleProfile - Assembles main output for variant profile
+           assembleProfileUnitTest - Assembles main output for variant profileUnitTest
+           assembleRelease - Assembles main output for variant release
+           assembleReleaseUnitTest - Assembles main output for variant releaseUnitTest
+           buildDebugPreBundle
+           buildProfilePreBundle
+           buildReleasePreBundle
+           bundleDebug - Assembles bundle for variant debug
+           bundleDebugAndroidTestClasses
+           bundleDebugAndroidTestResources
+           bundleDebugClasses
+           bundleDebugResources
+           bundleDebugUnitTestClasses
+           bundleProfile - Assembles bundle for variant profile
+           bundleProfileClasses
+           bundleProfileResources
+           bundleProfileUnitTestClasses
+           bundleRelease - Assembles bundle for variant release
+           bundleReleaseClasses
+           bundleReleaseResources
+           bundleReleaseUnitTestClasses
+           checkDebugAndroidTestDuplicateClasses
+           checkDebugDuplicateClasses
+           checkDebugManifest
+           checkProfileDuplicateClasses
+           checkProfileManifest
+           checkReleaseDuplicateClasses
+           checkReleaseManifest
+           collectDebugDependencies
+           collectProfileDependencies
+           collectReleaseDependencies
+           compileDebugAidl
+           compileDebugAndroidTestAidl
+           compileDebugAndroidTestJavaWithJavac
+           compileDebugAndroidTestRenderscript
+           compileDebugAndroidTestShaders
+           compileDebugJavaWithJavac
+           compileDebugRenderscript
+           compileDebugShaders
+           compileDebugUnitTestJavaWithJavac
+           compileLint
+           compileProfileAidl
+           compileProfileJavaWithJavac
+           compileProfileRenderscript
+           compileProfileShaders
+           compileProfileUnitTestJavaWithJavac
+           compileReleaseAidl
+           compileReleaseJavaWithJavac
+           compileReleaseRenderscript
+           compileReleaseShaders
+           compileReleaseUnitTestJavaWithJavac
+           configureDebugDependencies
+           configureProfileDependencies
+           configureReleaseDependencies
+           consumeConfigAttr
+           createDebugCompatibleScreenManifests
+           createMockableJar
+           createProfileCompatibleScreenManifests
+           createReleaseCompatibleScreenManifests
+           desugarDebugAndroidTestFileDependencies
+           desugarDebugFileDependencies
+           desugarProfileFileDependencies
+           desugarReleaseFileDependencies
+           dummydebugUnitTest
+           dummyprofileUnitTest
+           dummyreleaseUnitTest
+           extractApksForDebug
+           extractApksForProfile
+           extractApksForRelease
+           extractProguardFiles
+           generateDebugAndroidTestAssets
+           generateDebugAndroidTestBuildConfig
+           generateDebugAndroidTestResources
+           generateDebugAndroidTestResValues
+           generateDebugAndroidTestSources
+           generateDebugAssets
+           generateDebugBuildConfig
+           generateDebugFeatureMetadata
+           generateDebugFeatureTransitiveDeps
+           generateDebugResources
+           generateDebugResValues
+           generateDebugSources
+           generateDebugUnitTestAssets
+           generateDebugUnitTestResources
+           generateDebugUnitTestSources
+           generateProfileAssets
+           generateProfileBuildConfig
+           generateProfileFeatureMetadata
+           generateProfileFeatureTransitiveDeps
+           generateProfileResources
+           generateProfileResValues
+           generateProfileSources
+           generateProfileUnitTestAssets
+           generateProfileUnitTestResources
+           generateProfileUnitTestSources
+           generateReleaseAssets
+           generateReleaseBuildConfig
+           generateReleaseFeatureMetadata
+           generateReleaseFeatureTransitiveDeps
+           generateReleaseResources
+           generateReleaseResValues
+           generateReleaseSources
+           generateReleaseUnitTestAssets
+           generateReleaseUnitTestResources
+           generateReleaseUnitTestSources
+           javaPreCompileDebug
+           javaPreCompileDebugAndroidTest
+           javaPreCompileDebugUnitTest
+           javaPreCompileProfile
+           javaPreCompileProfileUnitTest
+           javaPreCompileRelease
+           javaPreCompileReleaseUnitTest
+           mainApkListPersistenceDebug
+           mainApkListPersistenceDebugAndroidTest
+           mainApkListPersistenceProfile
+           mainApkListPersistenceRelease
+           makeApkFromBundleForDebug
+           makeApkFromBundleForProfile
+           makeApkFromBundleForRelease
+           mergeDebugAndroidTestAssets
+           mergeDebugAndroidTestGeneratedProguardFiles
+           mergeDebugAndroidTestJavaResource
+           mergeDebugAndroidTestJniLibFolders
+           mergeDebugAndroidTestNativeLibs
+           mergeDebugAndroidTestResources
+           mergeDebugAndroidTestShaders
+           mergeDebugAssets
+           mergeDebugGeneratedProguardFiles
+           mergeDebugJavaResource
+           mergeDebugJniLibFolders
+           mergeDebugNativeLibs
+           mergeDebugResources
+           mergeDebugShaders
+           mergeDexDebug
+           mergeDexDebugAndroidTest
+           mergeDexProfile
+           mergeDexRelease
+           mergeProfileAssets
+           mergeProfileGeneratedProguardFiles
+           mergeProfileJavaResource
+           mergeProfileJniLibFolders
+           mergeProfileNativeLibs
+           mergeProfileResources
+           mergeProfileShaders
+           mergeReleaseAssets
+           mergeReleaseGeneratedProguardFiles
+           mergeReleaseJavaResource
+           mergeReleaseJniLibFolders
+           mergeReleaseNativeLibs
+           mergeReleaseResources
+           mergeReleaseShaders
+           multiDexListDebug
+           multiDexListDebugAndroidTest
+           multiDexListProfile
+           multiDexListRelease
+           packageDebug
+           packageDebugAndroidTest
+           packageDebugBundle
+           packageDebugUniversalApk
+           packageProfile
+           packageProfileBundle
+           packageProfileUniversalApk
+           packageRelease
+           packageReleaseBundle
+           packageReleaseUniversalApk
+           preBuild
+           preDebugAndroidTestBuild
+           preDebugBuild
+           preDebugUnitTestBuild
+           prepareKotlinBuildScriptModel
+           prepareLintJar
+           prepareLintJarForPublish
+           preProfileBuild
+           preProfileUnitTestBuild
+           preReleaseBuild
+           preReleaseUnitTestBuild
+           processDebugAndroidTestJavaRes
+           processDebugAndroidTestManifest
+           processDebugAndroidTestResources
+           processDebugGoogleServices
+           processDebugJavaRes
+           processDebugManifest
+           processDebugResources
+           processDebugUnitTestJavaRes
+           processProfileGoogleServices
+           processProfileJavaRes
+           processProfileManifest
+           processProfileResources
+           processProfileUnitTestJavaRes
+           processReleaseGoogleServices
+           processReleaseJavaRes
+           processReleaseManifest
+           processReleaseResources
+           processReleaseUnitTestJavaRes
+           reportBuildArtifactsDebug
+           reportBuildArtifactsProfile
+           reportBuildArtifactsRelease
+           reportSourceSetTransformAndroidTest
+           reportSourceSetTransformAndroidTestDebug
+           reportSourceSetTransformDebug
+           reportSourceSetTransformMain
+           reportSourceSetTransformProfile
+           reportSourceSetTransformRelease
+           reportSourceSetTransformTest
+           reportSourceSetTransformTestDebug
+           reportSourceSetTransformTestProfile
+           reportSourceSetTransformTestRelease
+           resolveConfigAttr
+           signDebugBundle
+           signingConfigWriterDebug
+           signingConfigWriterDebugAndroidTest
+           signingConfigWriterProfile
+           signingConfigWriterRelease
+           signProfileBundle
+           signReleaseBundle
+           stripDebugDebugSymbols
+           stripProfileDebugSymbols
+           stripReleaseDebugSymbols
+           transformClassesWithDexBuilderForDebug
+           transformClassesWithDexBuilderForDebugAndroidTest
+           transformClassesWithDexBuilderForProfile
+           transformClassesWithDexBuilderForRelease
+           validateSigningDebug
+           validateSigningDebugAndroidTest
+           validateSigningProfile
+           validateSigningRelease
+           writeDebugApplicationId
+           writeDebugModuleMetadata
+           writeProfileApplicationId
+           writeProfileModuleMetadata
+           writeReleaseApplicationId
+           writeReleaseModuleMetadata
+
+           Rules
+           -----
+           Pattern: clean<TaskName>: Cleans the output files of a task.
+           Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+           Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+           1 actionable task: 1 executed
+[   +3 ms] Resolving dependencies... (completed in 3.6s)
+[        ] Running Gradle task 'assembleRelease'...
+[   +2 ms] executing: [C:\src\Capstone\bts_driverapp\android\] C:\src\Capstone\bts_driverapp\android\gradlew.bat -Pverbose=true -Ptarget=lib\main.dart -Ptrack-widget-creation=false -Ptarget-platform=android-arm,android-arm64 assembleRelease
+[+2443 ms] > Configure project :flutter
+[        ] WARNING: API 'variantOutput.getProcessResources()' is obsolete and has been replaced with 'variantOutput.getProcessResourcesProvider()'.
+[        ] It will be removed at the end of 2019.
+[        ] For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+[        ] To determine what is calling variantOutput.getProcessResources(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+[  +89 ms] > Configure project :geoflutterfire
+[        ] WARNING: API 'variant.getPackageLibrary()' is obsolete and has been replaced with 'variant.getPackageLibraryProvider()'.
+[        ] It will be removed at the end of 2019.
+[        ] For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+[        ] To determine what is calling variant.getPackageLibrary(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+[+7483 ms] Running Gradle task 'assembleRelease'... (completed in 10.0s)
+[   +2 ms] "flutter apk" took 14,531ms.

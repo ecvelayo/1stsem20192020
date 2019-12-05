@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "219251826999",
+    "firebase_url": "https://beep-db-d2d2b.firebaseio.com",
+    "project_id": "beep-db-d2d2b",
+    "storage_bucket": "beep-db-d2d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219251826999:android:55a5cefc9badd93d5b7ab2",
+        "android_client_info": {
+          "package_name": "com.example.bts_commuterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219251826999-4vep6lkgevm90hpi25ar02ngbd5qn246.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bts_commuterapp",
+            "certificate_hash": "0f38b4c3657058ce5b3e8a807e9a49ffb9f21ddb"
+          }
+        },
+        {
+          "client_id": "219251826999-4ij3j4lddj4psopu08knl9a7tt1bomtc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bts_commuterapp",
+            "certificate_hash": "0a78be67058ca7a3e83370104fba4351e12bcdf5"
+          }
+        },
+        {
+          "client_id": "219251826999-r4tc7fgn2f485danfr4enkvbug4dldt0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bts_commuterapp",
+            "certificate_hash": "3d6af10faa9f763da9f453906f5e51a5c8672f4e"
+          }
+        },
+        {
+          "client_id": "219251826999-437falt3chkm5hb3qekor6snj5mss6gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1v2ExwIPZhsebmN00jRvd1nzZYPgkcqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219251826999-437falt3chkm5hb3qekor6snj5mss6gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219251826999:android:d45e05de30d3dc525b7ab2",
+        "android_client_info": {
+          "package_name": "com.example.bts_driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219251826999-th27lnv45mo1o11aafddq8e7247egov9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bts_driverapp",
+            "certificate_hash": "3d6af10faa9f763da9f453906f5e51a5c8672f4e"
+          }
+        },
+        {
+          "client_id": "219251826999-437falt3chkm5hb3qekor6snj5mss6gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1v2ExwIPZhsebmN00jRvd1nzZYPgkcqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219251826999-437falt3chkm5hb3qekor6snj5mss6gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

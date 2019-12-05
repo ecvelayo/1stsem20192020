@@ -1,0 +1,1 @@
+<template><div class="column"> <div class="ui grey tertiary segment"> <div class="ui statistic"> <h5 class="header">YESTERDAY'S SALES</h5> <div class="value"> <i class="large grey money bill alternate outline icon"></i><br>455.00 </div></div></div></div></template><script>export default{}</script>

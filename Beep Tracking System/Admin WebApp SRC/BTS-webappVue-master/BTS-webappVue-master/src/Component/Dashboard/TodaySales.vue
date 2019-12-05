@@ -1,0 +1,1 @@
+<template> <div class="column"> <div class="ui green segment"> <div class="ui statistic"> <h5 class="label">TODAY'S SALES</h5> <div class="value"> <i class="large green money bill alternate outline icon"></i><br>455.00 </div></div></div></div></template><script>export default{data(){return{sales:{},}}, methods:{getSales(){}}, mounted(){this.getSales()}}</script>
