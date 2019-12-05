@@ -1,0 +1,168 @@
+/*global custom style for background colors FOR BODY*/
+.bg-color-primary {
+	background-color: #bbdefb !important;
+}
+
+.bg-color-secondary {
+	background-color: #1a237e !important;
+}
+
+.bg-color-tertiary {
+	background-color: #ede7f6 !important;
+}
+
+.bg-color-quaternary {
+	background-color: #e8f5e9 !important;
+}
+
+.bg-color-quinary {
+	background-color: #f3e5f5 !important;
+}
+
+.bg-color-denary {
+	background-color: #6a1b9a !important;
+}
+
+/*global custom style for background colors for CARDS*/
+
+.uk-card-tertiary{
+	background-color: #64b5f6 !important;
+}
+
+.uk-card-quaternary{
+	background-color: #c5cae9 !important;
+}
+
+.uk-card-quinary{
+	background-color: #1a237e !important;
+}
+
+.uk-card-senary{
+	background-color: #b39ddb !important;
+}
+
+.uk-card-septenary{
+	background-color: #a5d6a7 !important;
+}
+
+.uk-card-octonary{
+	background-color: #2e7d32 !important;
+}
+
+.uk-card-nonary{
+	background-color: #ce93d8 !important;
+}
+
+.uk-card-denary{
+	background-color: #6a1b9a !important;
+}
+
+.uk-card-duodenary{
+	background-color: #283593 !important;
+}
+
+
+
+/*global custom style for font colors*/
+.font_white{
+	color: white !important;
+	margin: 0;
+}
+
+.font_black{
+	color: black !important;
+}
+
+
+/*global custom style for margins and paddings*/
+.container {
+	/*margin-top: 1% !important;
+	margin-left: 1% !important;
+	margin-right: 1% !important;*/
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.margin_all_10px{
+	margin: 10px !important;
+}
+
+
+/*global custom style for the input and forms*/
+.input_width_600px{
+	width: 600px !important;
+}
+
+
+/*global custom style for the division of cards*/
+.main_card_height_auto{
+	height: auto; !important;
+	width: 100% !important;
+}
+
+.main_card_height_810px{
+	height: 810px !important;
+	width: 100% !important;
+}
+
+.main_card_height_650px{
+	height: 650px !important;
+	width: 100% !important;
+}
+
+.main_card_height_630px{
+	height: 630px !important;
+	width: 100% !important;
+}
+
+.main_card_height_600px{
+	height: 600px !important;
+	width: 100% !important;
+}
+
+.main_card_height_550px{
+	height: 550px !important;
+	width: 100% !important;
+}
+
+.main_card_height_500px{
+	height: 500px !important;
+	width: 100% !important;
+}
+
+.main_card_height_430px{
+	height: 430px !important;
+	width: 100% !important;
+}
+
+.main_card_height_400px{
+	height: 400px !important;
+	width: 100% !important;
+}
+
+.card_height_430px{
+	height: 430px !important;
+	width: 100% !important;
+}
+
+.card_height_380px{
+	height: 380px !important;
+	width: 100% !important;
+}
+
+.card_height_200px{
+	height: 200px !important;
+	width: 100% !important;
+}
+
+.border_radius_15px;{
+	border-radius: 15px !important;
+}
+
+.hovered_pointer{
+	cursor: pointer;
+}
+
+svg{
+    margin-bottom: 3px;
+}

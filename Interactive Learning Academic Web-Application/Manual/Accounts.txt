@@ -1,0 +1,13 @@
+Accounts
+
+Student
+IDno/username: 1ab1
+Password: 1ab1 <--- the same with the IDno/username
+
+Teacher
+Username: sam
+password: 12345678
+
+Admin
+Username: admin
+password: admin123
