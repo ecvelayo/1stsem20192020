@@ -1,0 +1,5 @@
+mysql
+host - mysql1402b.xserver.jp
+db   - cebupotsang_amp
+user - cebupotsang_amp
+pass - pGdVCA6PhVfDCRN
