@@ -1,0 +1,22 @@
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/core/bootstrap-material-design.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/moment.min.js') }}"></script>
+{{-- <script src="{{ asset('vendor/material/js/plugins/sweetalert2.js') }}"></script> --}}
+<script src="{{ asset('vendor/material/js/plugins/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/jquery.bootstrap-wizard.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/bootstrap-selectpicker.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/bootstrap-tagsinput.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/jasny-bootstrap.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/fullcalendar.min.js') }}"></script>
+{{-- <script src="{{ asset('vendor/material/js/plugins/jquery-jvectormap.js') }}"></script> --}}
+{{-- <script src="{{ asset('vendor/material/js/plugins/nouislider.min.js') }}"></script> --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+{{-- <script src="{{ asset('vendor/material/js/plugins/arrive.min.js') }}"></script> --}}
+<script src="{{ asset('vendor/material/js/plugins/chartist.min.js') }}"></script>
+<script src="{{ asset('vendor/material/js/plugins/bootstrap-notify.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+ 
