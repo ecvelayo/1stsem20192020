@@ -1,41 +1,43 @@
 System Requirements
 
 Hardware Requirements
-Processor: Intel Core i5 or higher
-Memory: 4GB RAM or higher
-SSD/HDD: Free Disk Space 1GB
-Processor Type: 64 bit
-Processor Speed: 2.0 ghz or higher
+Processor: Intel Core i3 or equivalent
+
+Network Requirements
+Internet: 5 MBPS
 
 Software Requirements
-Source Code Editor: Visual Studio Code
-PHP: Version 7.3.3
-Laravel Framework: Version 5.8.35
+Operating System: Windows 8 or higher
+Google Chrome: 69.0.3497.100 (version)
+XAMPP: version 3.2.2
+PHP: Version 4.8.1
+Source Code Editor: Sublime (version 2.0.2)
+MySQL: 5.0.27 (version)
 Composer: Version 1.8.4
-Git: Version 2.21.0
-Operating System: Windows 10
+Git: Version 2.21.0 (version)
+Laravel Framework: Version 5.8.35
+
+PHP Extension
+Imagick: 7.0.8-34 (version)
+
 
 Installation
 
-Step 1.Download and install the latest version of XAMPP on the website (https://www.apachefriends.org/download.html).
-Step 2. Download and install VS Code source code editor ont the the website (https://code.visualstudio.com/)
-Step 3. Install Laravel and composer in your command prompt. (https://laravel.com/docs/5.8)
-Step 4. Clone the repository and paste it on Xampp/htdocs.
-Step 5. Open the XAMPP and click start for Apache and MYSQL.
-Step 5. Open the terminal inside the VS Code and type “php artisan migrate:fresh --seed”
-Step 6. After migrating successfully type “php artisan serve”.
-Step 7. Open new terminal and type "npm run watch".
-Step 8. Open Google Chrome Browser and type: http://localhost:8000/
+Step 1. Install XAMPP. Open the Xampp website by visiting https://www.apachefriends.org/index.html 
+Step 2. Download the Composer by going to this link https://getcomposer.org/
+Step 3. Search git bash and download on your browser or type this link https://git-scm.com/downloads
+Step 4. Download GhostScript installer
+Step 5. Install Imagick 7.0.8-34 (version)
 
 
 Default user:
-email: admin@gmail.com
-password: admin12345
+username: admin
+password: admin
+default password for teacher users: usc2018!*
 
 Troubleshoot:
 All users:
 Session Expire: Refresh the browser and relogin to your account.
-Notification bell: If the notification doesn`t update please refresh the page.
 
 Admin user:
 Manage Order Page: When accepting/declining an order doesn`t show alert messege, Please load the nexmo account for SMS notification because it will not save to transaction table on the database if the SMS notification will not work.
