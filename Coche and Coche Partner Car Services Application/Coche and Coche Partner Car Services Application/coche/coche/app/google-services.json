@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "630933064052",
+    "firebase_url": "https://coche-be4dc.firebaseio.com",
+    "project_id": "coche-be4dc",
+    "storage_bucket": "coche-be4dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630933064052:android:1839aad889b19f3c1a8421",
+        "android_client_info": {
+          "package_name": "co.coche.usc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630933064052-4rgk6lvkd82a0n4ei14mkrr37q9dsu8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.coche.usc",
+            "certificate_hash": "ab510d87fb5ff169b7c11869638d5670e283dbbc"
+          }
+        },
+        {
+          "client_id": "630933064052-h8iefe9nnh58p5dekvtak81cf61j3ouu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSzCuJmCMda6nT1rb1BtnbZbYgV9VCtJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630933064052-h8iefe9nnh58p5dekvtak81cf61j3ouu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

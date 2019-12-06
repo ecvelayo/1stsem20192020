@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/border_additional_info"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="80dp"
+        android:src="@drawable/pp"
+        app:civ_border_color="#EEEEEE"
+        android:layout_centerVertical="true"
+        app:civ_border_width="4dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_toRightOf="@+id/image"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ROSSIE FISHER"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OverHaul"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Montero"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/car_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IBM-2006"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8:00AM"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/layout_info"
+        android:layout_height="40dp"
+        android:text="Accept"/>
+
+    <Button
+        android:id="@+id/btn_decline"
+        android:layout_toRightOf="@+id/btn_accept"
+        android:layout_below="@+id/layout_info"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Decline"/>
+</RelativeLayout>

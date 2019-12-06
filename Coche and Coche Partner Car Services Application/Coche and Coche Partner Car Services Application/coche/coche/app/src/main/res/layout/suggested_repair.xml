@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="160dp"
+    android:layout_height="80dp"
+    android:layout_marginRight="10dp"
+    android:elevation="2dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_garage"
+        android:background="@drawable/border_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="#222222"
+                    android:ellipsize="end"
+                    android:id="@+id/garage_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Guadix Parking"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#222222"
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="400 meters"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:textSize="10sp"
+                android:textColor="#3a3a3a"
+                android:id="@+id/rate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Rate:"/>
+            <TextView
+                android:textSize="10sp"
+                android:textColor="#f58523"
+                android:id="@+id/amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Php 50.00"
+                android:layout_toEndOf="@+id/rate_text"/>
+            <TextView
+                android:textSize="10sp"
+                android:textColor="#3a3a3a"
+                android:id="@+id/hours_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="(First 2 hrs)"
+                android:layout_toEndOf="@+id/amount_text"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
