@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:id="@+id/offer_list"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu Apr 2019"
+            android:textColor="#ffffff"
+            android:textSize="8sp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txt_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repair"
+            android:textColor="#ffffff"
+            android:textSize="8sp"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/txt_date"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/txt_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Company"
+            android:textColor="#ffffff"
+            android:textSize="8sp"
+            android:layout_marginStart="60dp"
+            android:layout_toRightOf="@+id/txt_services"
+            android:layout_centerVertical="true"/>
+
+<!--        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--            android:id="@+id/my_item"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:src="@drawable/profilepic"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_toRightOf="@+id/txt_date"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            app:civ_border_color="#ffffff"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_shadow="true"-->
+<!--            app:civ_shadow_radius="10"-->
+<!--            app:civ_shadow_color="#22000000"/>-->
+
+<!--        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--            android:id="@+id/offer_user"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:src="@drawable/profilepic"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginStart="45dp"-->
+<!--            android:layout_toRightOf="@+id/my_item"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            app:civ_border_color="#ffffff"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_shadow="true"-->
+<!--            app:civ_shadow_radius="10"-->
+<!--            app:civ_shadow_color="#22000000"/>-->
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:layout_marginEnd="10dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentEnd="true"
+            android:textSize="8sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
