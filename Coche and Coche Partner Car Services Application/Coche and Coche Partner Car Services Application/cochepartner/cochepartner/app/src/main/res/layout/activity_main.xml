@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="usc.cochepartner.MainActivity">
+
+
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+       android:id="@+id/refreshlayout"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rv_booking"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:background="@color/white"
+       android:orientation="horizontal"
+       android:gravity="center">
+
+
+      <RelativeLayout
+          android:id="@+id/lin_reserve"
+          android:layout_width="80dp"
+          android:orientation="vertical"
+          android:layout_marginEnd="50dp"
+          android:layout_height="match_parent"
+          android:layout_marginRight="50dp">
+
+         <ImageView
+             android:id="@+id/img_reserve_logo"
+             android:layout_centerInParent="true"
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/reserve"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/img_reserve_logo"
+             android:text="Reservation"
+             android:textColor="#000000"
+             android:textStyle="bold"/>
+
+
+      </RelativeLayout>
+
+
+      <LinearLayout
+          android:id="@+id/lin_approved"
+          android:layout_width="70dp"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:onClick="intentapproved"
+          android:layout_marginEnd="50dp"
+          android:layout_height="match_parent"
+          android:layout_marginRight="50dp">
+
+         <ImageView
+             android:id="@+id/img_reserve"
+             android:layout_marginTop="10dp"
+             android:onClick="intentapproved"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_check_circle_black_24dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Approved"
+             android:onClick="intentapproved"
+             android:textColor="#000000"
+             android:textStyle="bold"/>
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/lin_profile"
+          android:layout_width="70dp"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:onClick="intentprofile"
+          android:layout_marginEnd="10dp"
+          android:layout_height="match_parent"
+          android:layout_marginRight="10dp">
+
+         <ImageView
+             android:id="@+id/img_profile"
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:onClick="intentprofile"
+             android:layout_height="wrap_content"
+             android:src="@drawable/users"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Profile"
+             android:onClick="intentprofile"
+             android:textColor="#000000"
+             android:textStyle="bold"/>
+
+
+      </LinearLayout>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

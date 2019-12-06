@@ -1,0 +1,9 @@
+App ID - 5JdLQaA96apXJNv7NI2j23ejgxkrVOtUZj26r8fi
+
+Parse API Address - https://parseapi.back4app.com/
+
+Client Key - xteiFkCvq8obF6St14iS2SaHV05djVZF951rzCli
+
+Master Key - JNkgOFvJ4e50YgYIiTGNJevEZ9Dzf9xyZ5gRa2iX
+
+REST API Key -trhuiy93yR0MfXAxEq24IFHGAWUK3tZwBgGLi4pw

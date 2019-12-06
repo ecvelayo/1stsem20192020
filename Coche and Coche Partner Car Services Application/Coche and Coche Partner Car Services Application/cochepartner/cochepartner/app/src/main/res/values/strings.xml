@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CochePartner</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">D5tEJTTnYCyj4YIP33SNJHfOMB5JYmAbdOHB2epG</string>
+    <string name="back4app_client_key">LTnN90rCbR8VGcx5RRATH5GMJIAacg2dYZRQ8kSH</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="API">AIzaSyDnmNZIfnaprgzcDpIHLiPtkDgYzOeCgKo</string>
+
+</resources>
